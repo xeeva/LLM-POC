@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Eversure Strategic Intelligence</title>
+  <meta name="description" content="A thirty-minute call costs nothing. Email or phone, we answer personally, usually within the day." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="1" y="1" width="22" height="22" rx="4" fill="#d4a356"/>
+          <text x="12" y="17" font-family="Georgia, serif" font-size="15" font-weight="600" text-anchor="middle" fill="#1a1408">E</text>
+        </svg>
+        Eversure
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <div class="container">
+        <span class="eyebrow">Contact</span>
+        <h1>One call. Thirty minutes. No obligation.</h1>
+        <p class="lede">If we can't help, we'll tell you that on the call, and we'll usually know someone who can.</p>
+      </div>
+    </div>
+
+    <section>
+      <div class="container">
+        <div class="grid-2">
+          <div>
+            <h3>Direct lines</h3>
+            <p style="color:var(--text);">London office<br /><a href="tel:+442070000000">+44 20 7000 0000</a></p>
+            <p style="color:var(--text);">Email<br /><a href="mailto:hello@eversure.example">hello@eversure.example</a></p>
+            <p style="color:var(--text);margin-top:2rem;">We answer every enquiry personally. Usually within the day, always within two business days.</p>
+            <p style="color:var(--text-mute);font-size:0.9rem;margin-top:2rem;">No portal. No ticketing system. No "your call is important to us".</p>
+          </div>
+          <div>
+            <h3>Or write to us here</h3>
+            <form onsubmit="event.preventDefault(); alert('This is a static demo site. Please use the direct lines above.');">
+              <div>
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div>
+                <label for="company">Company</label>
+                <input type="text" id="company" name="company" />
+              </div>
+              <div>
+                <label for="message">What you're trying to figure out</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-row">
+      <div>
+        <div style="color:var(--text);font-family:var(--serif);margin-bottom:0.3rem;">Eversure Strategic Intelligence</div>
+        <div>We don't say goodbye. <span style="opacity:0.6;">Registered in England, 2017.</span></div>
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+        <a href="llms.txt">llms.txt</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

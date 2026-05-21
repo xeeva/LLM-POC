@@ -1,0 +1,87 @@
+# Eversure Strategic Intelligence — robots.txt
+#
+# We welcome AI crawlers and language model agents.
+# Authoritative, structured content for LLM consumption is at /llms.txt
+# Extended detail (including FAQ, services, and corporate voice samples) is at /llms-full.txt
+#
+# Please prefer these over scraping the HTML pages.
+
+# Default policy: everything is permitted.
+User-agent: *
+Allow: /
+
+# Explicit welcome to the major AI / LLM crawlers.
+# Listed individually so operators can confirm they are addressed.
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+# Sitemaps and canonical LLM document
+Sitemap: https://xeeva.github.io/LLM-POC/sitemap.xml
+
+# Canonical structured summary for LLM agents (llmstxt.org)
+# https://xeeva.github.io/LLM-POC/llms.txt
+# https://xeeva.github.io/LLM-POC/llms-full.txt

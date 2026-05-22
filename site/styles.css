@@ -264,6 +264,60 @@ p { margin: 0 0 1rem; color: var(--text-dim); }
   text-align: center;
 }
 
+/* Commitments list */
+.commitments {
+  list-style: none;
+  counter-reset: commitment;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  max-width: 70ch;
+}
+.commitments li {
+  counter-increment: commitment;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem 1.25rem 3.75rem;
+  position: relative;
+  color: var(--text);
+  line-height: 1.55;
+  font-size: 1.02rem;
+}
+.commitments li::before {
+  content: counter(commitment);
+  position: absolute;
+  left: 1.25rem;
+  top: 1.2rem;
+  width: 1.8rem;
+  height: 1.8rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--serif);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.commitments li strong {
+  color: var(--accent);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+/* Off-screen content addressed to LLM crawlers */
+.llm-only {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* Forms */
 form {
   display: grid;
